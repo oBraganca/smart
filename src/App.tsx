@@ -234,17 +234,24 @@ function App() {
               </p>
             </blockquote>
             <figcaption className="mt-10">
-              <img
-                className="mx-auto h-12 w-12 rounded-full"
-                src="https://media.licdn.com/dms/image/D4D03AQF_cgwq3RfEpg/profile-displayphoto-shrink_800_800/0/1670870067517?e=1691625600&v=beta&t=a_hzLKcTcZBg-3f6H24V4xCsd0sS-TXvjVMUL-xGpEQ"
+              <div className="flex items-center justify-center">
+                <img
+                  className="mr-2 h-12 w-12 rounded-full"
+                  src="https://media.licdn.com/dms/image/D4D03AQF_cgwq3RfEpg/profile-displayphoto-shrink_800_800/0/1670870067517?e=1691625600&v=beta&t=a_hzLKcTcZBg-3f6H24V4xCsd0sS-TXvjVMUL-xGpEQ"
+                  alt=""
+                />
+                <img
+                className="ml-2 h-12 w-12 rounded-full"
+                src="https://media.licdn.com/dms/image/C4E03AQHDlnv6rU5p4A/profile-displayphoto-shrink_200_200/0/1664202122578?e=1692230400&v=beta&t=n29M-KZHd5Lz63SHhL4s-u8BA1mU-CQ-sYmQRtUjbwY"
                 alt=""
-              />
+                />
+              </div>
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                <div className="font-semibold text-gray-900">Thayllon Bragança</div>
+                <div className="font-semibold text-gray-900">Thayllon Bragança, Kayron Bragança</div>
+                <div className="text-gray-600">Founder of Timeless Corpore</div>
                 <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-900">
                   <circle cx={1} cy={1} r={1} />
                 </svg>
-                <div className="text-gray-600">Founder of Timeless Corpore</div>
               </div>
             </figcaption>
           </figure>
