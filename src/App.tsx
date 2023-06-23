@@ -25,7 +25,7 @@ const features = [
   },
   {
     name: 'SSL certificates.',
-    description: 'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+    description: 'Protecting and respecting your sensitive data with SSL encryption and making your connection private.',
     icon: LockClosedIcon,
   },
   {
@@ -142,7 +142,7 @@ function App() {
                 is quality of life
               </h1>
               <p className="mt-6 text-lg text-left leading-8 text-gray-600">
-                A leader in the technological revolution with our company specializing in Internet of Things (IoT) solutions. Transform your processes, gain productivity and take your business to the next level with custom solutions from our team of IoT experts.
+                With focus in the technological revolution with our company specializing in Internet of Things (IoT) solutions. Transform your processes, gain productivity and take your business to the next level with custom solutions from our team of IoT experts.
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <a
@@ -233,25 +233,23 @@ function App() {
                 “Our mission is to drive innovation and transform the way people interact with the world around them. We believe that the Internet of Things (IoT) has the power to connect devices, data and people, creating an intelligent and interconnected ecosystem.”
               </p>
             </blockquote>
-            <figcaption className="mt-10">
+            <figcaption className="mt-10 ">
+                <div className="text-lg font-semibold leading-6 text-indigo-700 flex justify-center font-size: mb-3">Founders of Timeless Corpore</div>
               <div className="flex items-center justify-center">
                 <img
-                  className="mr-2 h-12 w-12 rounded-full"
+                  className="mr-10 h-12 w-12 rounded-full"
                   src="https://media.licdn.com/dms/image/D4D03AQF_cgwq3RfEpg/profile-displayphoto-shrink_800_800/0/1670870067517?e=1691625600&v=beta&t=a_hzLKcTcZBg-3f6H24V4xCsd0sS-TXvjVMUL-xGpEQ"
                   alt=""
                 />
                 <img
-                className="ml-2 h-12 w-12 rounded-full"
+                className="ml-10 h-12 w-12 rounded-full"
                 src="https://media.licdn.com/dms/image/C4E03AQHDlnv6rU5p4A/profile-displayphoto-shrink_200_200/0/1664202122578?e=1692230400&v=beta&t=n29M-KZHd5Lz63SHhL4s-u8BA1mU-CQ-sYmQRtUjbwY"
                 alt=""
                 />
               </div>
-              <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-                <div className="font-semibold text-gray-900">Thayllon Bragança, Kayron Bragança</div>
-                <div className="text-gray-600">Founder of Timeless Corpore</div>
-                <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-900">
-                  <circle cx={1} cy={1} r={1} />
-                </svg>
+              <div className="mt-3 flex items-center justify-center space-x-3 text-base">
+                <div className="mr-2 font-semibold text-gray-900">Thayllon Bragança</div>
+                <div className="ml-2 font-semibold text-gray-900">Kayron Bragança</div>
               </div>
             </figcaption>
           </figure>
