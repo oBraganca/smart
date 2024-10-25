@@ -18,19 +18,19 @@ const navigation = [
 ]
 const features = [
   {
-    name: 'Push to deploy.',
+    name: 'Implantação com um clique.',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Automatizamos o processo de implantação, permitindo que seus sistemas sejam enviados para produção de forma rápida e segura. Reduza o tempo de entrega e melhore a experiência dos seus clientes.',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates.',
-    description: 'Protecting and respecting your sensitive data with SSL encryption and making your connection private.',
+    name: 'Certificados SSL.',
+    description: 'Protegemos seus sistemas com certificados SSL, garantindo a segurança na troca de informações e a proteção de dados sensíveis de seus clientes.',
     icon: LockClosedIcon,
   },
   {
-    name: 'Database backups.',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
+    name: 'Backups de banco de dados.',
+    description: 'Realizamos backups de todos os sistemas, assegurando que as informações essenciais de seus clientes estejam sempre seguras e possam ser recuperadas rapidamente em caso de imprevistos',
     icon: ServerIcon,
   },
 ]
@@ -109,16 +109,16 @@ function App() {
               {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          {/* <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
                 {item.name}
               </a>
             ))}
-          </div>
+          </div> */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
+              Contato <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
         </nav>
@@ -137,23 +137,23 @@ function App() {
             </div>
             <div className="text-center">
               <h1 className="text-4xl text-left font-bold tracking-tight text-[#061427] sm:text-6xl">
-                IoT and Technology
+                Tecnologia
                 <br/>
-                is quality of life
+                é qualidade de vida
               </h1>
               <p className="mt-6 text-lg text-left leading-8 text-gray-600">
-                With focus in the technological revolution with our company specializing in Internet of Things (IoT) solutions. Transform your processes, gain productivity and take your business to the next level with custom solutions from our team of IoT experts.
+                Abrace a revolução tecnológica com nossas soluções especializadas. Transforme seus processos, aumente a produtividade e leve seu negócio a um novo nível com inovações, desenvolvidas pela nossa equipe de especialistas.             
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <a
                   href="#"
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 bg-[#4f46e5]"
                 >
-                  Get started
+                  Comece agora
                 </a>
-                <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+                {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
                   Learn more <span aria-hidden="true">→</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -174,41 +174,47 @@ function App() {
           <img src={iconBlack}/>
         </div>
       </div>
+      
       <div className="overflow-hidden bg-white py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none ">
               <div className="lg:pr-8 lg:pt-4">
-                <div className="lg:max-w-lg">
-                  <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</p>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque,
-                    iste dolor cupiditate blanditiis ratione.
-                  </p>
-                  <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                    {features.map((feature) => (
-                      <div key={feature.name} className="relative pl-9">
-                        <dt className="inline font-semibold text-gray-900">
-                          <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600" aria-hidden="true" />
-                          {feature.name}
-                        </dt>{' '}
-                        <dd className="inline">{feature.description}</dd>
-                      </div>
-                    ))}
-                  </dl>
+                <div className="">
+                  <div >
+                    <div className='row'>
+                      <h2 className="text-base font-semibold leading-7 text-indigo-600">Implantação Veloz</h2>
+                      <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Um workflow otimizado</p>
+                      <p className="mt-6 text-lg leading-8 text-gray-600">
+                        Otimize o desenvolvimento dos seus sistemas com nosso fluxo de trabalho ágil e seguro.
+                      </p>
+                      <dl className="flex space-x-8 mt-10 max-w-xl text-base leading-7 text-gray-600 lg:max-w-none">
+                        {features.map((feature) => (
+                          <div className='col'>
+                            <div key={feature.name} className="relative pl-9">
+                              <dt className="inline font-semibold text-gray-900">
+                                <feature.icon className="absolute left-1 top-1 h-5 w-5 text-indigo-600" aria-hidden="true" />
+                                {feature.name}
+                              </dt>{' '}
+                              <dd className="inline">{feature.description}</dd>
+                            </div>
+                          </div>
+                        ))}
+                      </dl>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <img
+              {/* <img
                 src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
                 alt="Product screenshot"
                 className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
                 width={2432}
                 height={1442}
-              />
+              /> */}
             </div>
           </div>
       </div>
-      <div className="bg-white py-24 sm:py-32">
+      {/* <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
             {stats.map((stat) => (
@@ -221,7 +227,7 @@ function App() {
             ))}
           </dl>
         </div>
-      </div>
+      </div> */}
       <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20" />
         <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
@@ -230,20 +236,20 @@ function App() {
           <figure className="mt-10">
             <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
               <p>
-                “Our mission is to drive innovation and transform the way people interact with the world around them. We believe that the Internet of Things (IoT) has the power to connect devices, data and people, creating an intelligent and interconnected ecosystem.”
+                “Nossa missão é impulsionar a inovação e transformar a maneira como as pessoas interagem com o mundo ao seu redor. Acreditamos que a tecnologia pode conectar dados, processos e pessoas, criando um ecossistema inteligente e interconectado. Oferecemos soluções personalizadas que potencializam empresas e modernizam operações para o futuro.”
               </p>
             </blockquote>
             <figcaption className="mt-10 ">
-                <div className="text-lg font-semibold leading-6 text-indigo-700 flex justify-center font-size: mb-3">Founders of Timeless Corpore</div>
+                <div className="text-lg font-semibold leading-6 text-indigo-700 flex justify-center font-size: mb-3">Fundadores</div>
               <div className="flex items-center justify-center">
                 <img
-                  className="mr-10 h-12 w-12 rounded-full"
-                  src="https://media.licdn.com/dms/image/D4D03AQF_cgwq3RfEpg/profile-displayphoto-shrink_800_800/0/1670870067517?e=1691625600&v=beta&t=a_hzLKcTcZBg-3f6H24V4xCsd0sS-TXvjVMUL-xGpEQ"
+                  className="mr-10 h-12 w-12 rounded-full border-black	border-2	"
+                  src="https://media.licdn.com/dms/image/v2/D4D03AQENUr6E0SS_IQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1714404007495?e=1735171200&v=beta&t=EYkIKtTA_VSK_UMo6KxdrtJ8LasEOzbmBxKXvSbhllk"
                   alt=""
                 />
                 <img
-                className="ml-10 h-12 w-12 rounded-full"
-                src="https://media.licdn.com/dms/image/C4E03AQHDlnv6rU5p4A/profile-displayphoto-shrink_200_200/0/1664202122578?e=1692230400&v=beta&t=n29M-KZHd5Lz63SHhL4s-u8BA1mU-CQ-sYmQRtUjbwY"
+                className="ml-10 h-12 w-12 rounded-full border-black border-2		"
+                src="https://media.licdn.com/dms/image/v2/D4D03AQHIwS5fzbTQWw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1725978823622?e=1735171200&v=beta&t=Fn9Vq9Yu7kSIcsEE18U70ECqndHMZf8p58NKlaRshOw"
                 alt=""
                 />
               </div>
@@ -317,7 +323,7 @@ function App() {
           />
         </div>
       </div>
-      <div className="bg-white py-24 sm:py-32">
+      {/* <div className="bg-white py-24 sm:py-32">
         <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
@@ -388,7 +394,7 @@ function App() {
               ))}
             </div>
         </div>
-      </div>
+      </div> */}
     </div>
     
   )
